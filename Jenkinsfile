@@ -1,15 +1,20 @@
-Pipeline
-{ 
-  agent {label 'Slave7'}
-  stage {
-     stage ('build')
-         {
-         }
-         stage('test')
-           {
-           }
-           stage('deploy')
-              {
-              }
-         }
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
 }
