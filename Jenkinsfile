@@ -1,6 +1,6 @@
 Pipeline
 { 
-  agent {label Slave 1}
+  agent {label 'Slave7'}
   stage {
      stage ('build')
          {
@@ -8,10 +8,7 @@ Pipeline
          stage('test')
            {
            }
-         stage('test')
-             {
-             }
-         stage('deploy')
+           stage('deploy')
               {
               }
          }
